@@ -72,6 +72,7 @@ Partial Class BillForm
         'MaHDLabel
         '
         Me.MaHDLabel.AutoSize = True
+        Me.MaHDLabel.ForeColor = System.Drawing.Color.YellowGreen
         Me.MaHDLabel.Location = New System.Drawing.Point(30, 15)
         Me.MaHDLabel.Name = "MaHDLabel"
         Me.MaHDLabel.Size = New System.Drawing.Size(65, 13)
