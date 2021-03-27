@@ -154,7 +154,7 @@ Partial Class BillForm
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
-        Me.ClientSize = New System.Drawing.Size(415, 239)
+        Me.ClientSize = New System.Drawing.Size(451, 239)
         Me.Controls.Add(Me.LoaiDien)
         Me.Controls.Add(Me.MaKH)
         Me.Controls.Add(Me.NgayThu)
