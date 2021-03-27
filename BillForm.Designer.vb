@@ -63,6 +63,8 @@ Partial Class BillForm
         'MaKHLabel
         '
         Me.MaKHLabel.AutoSize = True
+        Me.MaKHLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaKHLabel.ForeColor = System.Drawing.Color.White
         Me.MaKHLabel.Location = New System.Drawing.Point(30, 42)
         Me.MaKHLabel.Name = "MaKHLabel"
         Me.MaKHLabel.Size = New System.Drawing.Size(82, 13)
@@ -72,8 +74,9 @@ Partial Class BillForm
         'MaHDLabel
         '
         Me.MaHDLabel.AutoSize = True
-        Me.MaHDLabel.ForeColor = System.Drawing.Color.YellowGreen
-        Me.MaHDLabel.Location = New System.Drawing.Point(30, 15)
+        Me.MaHDLabel.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MaHDLabel.ForeColor = System.Drawing.Color.White
+        Me.MaHDLabel.Location = New System.Drawing.Point(31, 15)
         Me.MaHDLabel.Name = "MaHDLabel"
         Me.MaHDLabel.Size = New System.Drawing.Size(65, 13)
         Me.MaHDLabel.TabIndex = 9
