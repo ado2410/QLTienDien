@@ -37,101 +37,124 @@ Partial Class BillForm
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(118, 158)
+        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.ForeColor = System.Drawing.Color.White
+        Me.Button1.Location = New System.Drawing.Point(188, 189)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(153, 23)
+        Me.Button1.Size = New System.Drawing.Size(126, 38)
         Me.Button1.TabIndex = 15
         Me.Button1.Text = "Thêm"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Button1.UseVisualStyleBackColor = False
         '
         'MaHD
         '
-        Me.MaHD.Location = New System.Drawing.Point(118, 12)
+        Me.MaHD.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaHD.Location = New System.Drawing.Point(146, 12)
         Me.MaHD.Name = "MaHD"
-        Me.MaHD.Size = New System.Drawing.Size(222, 20)
+        Me.MaHD.Size = New System.Drawing.Size(234, 23)
         Me.MaHD.TabIndex = 14
         '
         'NgayThuLabel
         '
         Me.NgayThuLabel.AutoSize = True
-        Me.NgayThuLabel.Location = New System.Drawing.Point(31, 72)
+        Me.NgayThuLabel.BackColor = System.Drawing.Color.Green
+        Me.NgayThuLabel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NgayThuLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.NgayThuLabel.Location = New System.Drawing.Point(31, 88)
         Me.NgayThuLabel.Name = "NgayThuLabel"
-        Me.NgayThuLabel.Size = New System.Drawing.Size(50, 13)
+        Me.NgayThuLabel.Size = New System.Drawing.Size(67, 17)
         Me.NgayThuLabel.TabIndex = 4
         Me.NgayThuLabel.Text = "Ngày thu"
         '
         'MaKHLabel
         '
         Me.MaKHLabel.AutoSize = True
-        Me.MaKHLabel.Location = New System.Drawing.Point(30, 42)
+        Me.MaKHLabel.BackColor = System.Drawing.Color.Green
+        Me.MaKHLabel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaKHLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.MaKHLabel.Location = New System.Drawing.Point(30, 51)
         Me.MaKHLabel.Name = "MaKHLabel"
-        Me.MaKHLabel.Size = New System.Drawing.Size(82, 13)
+        Me.MaKHLabel.Size = New System.Drawing.Size(110, 17)
         Me.MaKHLabel.TabIndex = 8
         Me.MaKHLabel.Text = "Mã khách hàng"
         '
         'MaHDLabel
         '
         Me.MaHDLabel.AutoSize = True
-        Me.MaHDLabel.ForeColor = System.Drawing.Color.YellowGreen
-        Me.MaHDLabel.Location = New System.Drawing.Point(30, 15)
+        Me.MaHDLabel.BackColor = System.Drawing.Color.Green
+        Me.MaHDLabel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.MaHDLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.MaHDLabel.Location = New System.Drawing.Point(31, 15)
         Me.MaHDLabel.Name = "MaHDLabel"
-        Me.MaHDLabel.Size = New System.Drawing.Size(65, 13)
+        Me.MaHDLabel.Size = New System.Drawing.Size(87, 17)
         Me.MaHDLabel.TabIndex = 9
         Me.MaHDLabel.Text = "Mã hóa đơn"
         '
         'SoDienLable
         '
         Me.SoDienLable.AutoSize = True
-        Me.SoDienLable.Location = New System.Drawing.Point(30, 122)
+        Me.SoDienLable.BackColor = System.Drawing.Color.Green
+        Me.SoDienLable.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SoDienLable.ForeColor = System.Drawing.Color.Yellow
+        Me.SoDienLable.Location = New System.Drawing.Point(30, 156)
         Me.SoDienLable.Name = "SoDienLable"
-        Me.SoDienLable.Size = New System.Drawing.Size(44, 13)
+        Me.SoDienLable.Size = New System.Drawing.Size(54, 17)
         Me.SoDienLable.TabIndex = 4
         Me.SoDienLable.Text = "Số điện"
         '
         'SoDien
         '
-        Me.SoDien.Location = New System.Drawing.Point(118, 119)
+        Me.SoDien.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SoDien.Location = New System.Drawing.Point(146, 147)
         Me.SoDien.Name = "SoDien"
-        Me.SoDien.Size = New System.Drawing.Size(222, 20)
+        Me.SoDien.Size = New System.Drawing.Size(234, 23)
         Me.SoDien.TabIndex = 10
         '
         'NgayThu
         '
-        Me.NgayThu.Location = New System.Drawing.Point(118, 66)
+        Me.NgayThu.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.NgayThu.Location = New System.Drawing.Point(146, 87)
         Me.NgayThu.Name = "NgayThu"
-        Me.NgayThu.Size = New System.Drawing.Size(222, 20)
+        Me.NgayThu.Size = New System.Drawing.Size(234, 23)
         Me.NgayThu.TabIndex = 16
         '
         'LoaiDienLabel
         '
         Me.LoaiDienLabel.AutoSize = True
-        Me.LoaiDienLabel.Location = New System.Drawing.Point(30, 95)
+        Me.LoaiDienLabel.BackColor = System.Drawing.Color.Green
+        Me.LoaiDienLabel.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoaiDienLabel.ForeColor = System.Drawing.Color.Yellow
+        Me.LoaiDienLabel.Location = New System.Drawing.Point(30, 122)
         Me.LoaiDienLabel.Name = "LoaiDienLabel"
-        Me.LoaiDienLabel.Size = New System.Drawing.Size(51, 13)
+        Me.LoaiDienLabel.Size = New System.Drawing.Size(66, 17)
         Me.LoaiDienLabel.TabIndex = 4
         Me.LoaiDienLabel.Text = "Loại điện"
         '
         'MaKH
         '
+        Me.MaKH.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MaKH.FormattingEnabled = True
-        Me.MaKH.Location = New System.Drawing.Point(118, 39)
+        Me.MaKH.Location = New System.Drawing.Point(146, 48)
         Me.MaKH.Name = "MaKH"
-        Me.MaKH.Size = New System.Drawing.Size(222, 21)
+        Me.MaKH.Size = New System.Drawing.Size(234, 25)
         Me.MaKH.TabIndex = 17
         '
         'LoaiDien
         '
+        Me.LoaiDien.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoaiDien.FormattingEnabled = True
-        Me.LoaiDien.Location = New System.Drawing.Point(118, 92)
+        Me.LoaiDien.Location = New System.Drawing.Point(146, 116)
         Me.LoaiDien.Name = "LoaiDien"
-        Me.LoaiDien.Size = New System.Drawing.Size(121, 21)
+        Me.LoaiDien.Size = New System.Drawing.Size(122, 25)
         Me.LoaiDien.TabIndex = 18
         '
         'BillForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(377, 198)
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.ClientSize = New System.Drawing.Size(415, 239)
         Me.Controls.Add(Me.LoaiDien)
         Me.Controls.Add(Me.MaKH)
         Me.Controls.Add(Me.NgayThu)
