@@ -1,4 +1,20 @@
 ﻿Public Class Customer
+    Private Sub Save()
+        Main.Save("../../database/customers.txt", CustomerLV)
+
+    End Sub
+
+    Private Sub Load()
+        Dim list = Main.Load("../../database/customers.txt")
+        For Each item In list
+            CustomerLV.Items.Add(item)
+        Next
+    End Sub
+
+    Private Sub AddToCustomerLV(item As Array)
+        Main.AddToListView(item, CustomerLV)
+    End Sub
+
     Private Sub Customer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         CustomerLV.View = View.Details
     End Sub
@@ -24,5 +40,13 @@
             CustomerFormShow.Mode = 1
             CustomerFormShow.Show()
         End If
+    End Sub
+
+    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
+        Save()
+    End Sub
+
+    Private Sub LoadButton_Click(sender As Object, e As EventArgs) Handles LoadButton.Click
+        Load()
     End Sub
 End Class

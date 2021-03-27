@@ -1,6 +1,11 @@
 ﻿Public Class CustomerForm
     Public CustomerLVLink As ListView
     Public Mode As Integer = 0
+
+    Private Sub AddToListView(item As Array)
+        Main.AddToListView(item, CustomerLVLink)
+    End Sub
+
     Private Sub ConfirmedButton_Click(sender As Object, e As EventArgs) Handles ConfirmedButton.Click
         Dim isValid = True
         'Kiem tra SDT nhap vao co phai la so khong
@@ -20,22 +25,17 @@
         End If
 
         If isValid = True Then
-            Dim Data = New ListViewItem()
-            Data.SubItems.Add(MaKH.Text)
-            Data.SubItems.Add(TenKH.Text)
+            Dim gender As String
             If Nam.Checked Then
-                Data.SubItems.Add("Nam")
+                gender = "Nam"
             Else
-                Data.SubItems.Add("Nữ")
+                gender = "Nữ"
             End If
-            Data.SubItems.Add(DiaChi.Text)
-            Data.SubItems.Add(CMND.Text)
-            Data.SubItems.Add(SDT.Text)
+            AddToListView({CustomerLVLink.Items.Count + 1, MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
 
             If Mode = 1 Then
                 CustomerLVLink.Items.RemoveAt(CustomerLVLink.FocusedItem.Index)
             End If
-            CustomerLVLink.Items.Add(Data)
             Close()
         End If
     End Sub
@@ -43,18 +43,18 @@
     Private Sub CustomerForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         If Mode = 1 Then
             For Each i As ListViewItem In CustomerLVLink.SelectedItems
-                MaKH.Text = i.SubItems(0).Text
-                TenKH.Text = i.SubItems(1).Text
-                If i.SubItems(2).Text = "Nam" Then
+                MaKH.Text = i.SubItems(1).Text
+                TenKH.Text = i.SubItems(2).Text
+                If i.SubItems(3).Text = "Nam" Then
                     Nam.Checked = True
                     Nu.Checked = False
                 Else
                     Nam.Checked = False
                     Nu.Checked = True
                 End If
-                DiaChi.Text = i.SubItems(3).Text
-                CMND.Text = i.SubItems(4).Text
-                SDT.Text = i.SubItems(5).Text
+                DiaChi.Text = i.SubItems(4).Text
+                CMND.Text = i.SubItems(5).Text
+                SDT.Text = i.SubItems(6).Text
             Next
         End If
     End Sub

@@ -22,7 +22,7 @@ Partial Class BillForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.ConfirmedButton = New System.Windows.Forms.Button()
         Me.MaHD = New System.Windows.Forms.TextBox()
         Me.NgayThuLabel = New System.Windows.Forms.Label()
         Me.MaKHLabel = New System.Windows.Forms.Label()
@@ -35,17 +35,17 @@ Partial Class BillForm
         Me.LoaiDien = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'Button1
+        'ConfirmedButton
         '
-        Me.Button1.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Button1.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.ForeColor = System.Drawing.Color.White
-        Me.Button1.Location = New System.Drawing.Point(188, 189)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(126, 38)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Thêm"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.ConfirmedButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ConfirmedButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ConfirmedButton.ForeColor = System.Drawing.Color.White
+        Me.ConfirmedButton.Location = New System.Drawing.Point(188, 189)
+        Me.ConfirmedButton.Name = "ConfirmedButton"
+        Me.ConfirmedButton.Size = New System.Drawing.Size(126, 38)
+        Me.ConfirmedButton.TabIndex = 15
+        Me.ConfirmedButton.Text = "Thêm"
+        Me.ConfirmedButton.UseVisualStyleBackColor = False
         '
         'MaHD
         '
@@ -158,7 +158,7 @@ Partial Class BillForm
         Me.Controls.Add(Me.LoaiDien)
         Me.Controls.Add(Me.MaKH)
         Me.Controls.Add(Me.NgayThu)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.ConfirmedButton)
         Me.Controls.Add(Me.SoDien)
         Me.Controls.Add(Me.MaHD)
         Me.Controls.Add(Me.LoaiDienLabel)
@@ -172,7 +172,7 @@ Partial Class BillForm
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents Button1 As Button
+    Friend WithEvents ConfirmedButton As Button
     Friend WithEvents MaHD As TextBox
     Friend WithEvents NgayThuLabel As Label
     Friend WithEvents MaKHLabel As Label

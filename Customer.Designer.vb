@@ -33,6 +33,8 @@ Partial Class Customer
         Me.CreateButton = New System.Windows.Forms.Button()
         Me.EditButton = New System.Windows.Forms.Button()
         Me.DeleteButton = New System.Windows.Forms.Button()
+        Me.SaveButton = New System.Windows.Forms.Button()
+        Me.LoadButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'CustomerLV
@@ -113,11 +115,31 @@ Partial Class Customer
         Me.DeleteButton.Text = "Xóa"
         Me.DeleteButton.UseVisualStyleBackColor = True
         '
+        'SaveButton
+        '
+        Me.SaveButton.Location = New System.Drawing.Point(12, 12)
+        Me.SaveButton.Name = "SaveButton"
+        Me.SaveButton.Size = New System.Drawing.Size(75, 23)
+        Me.SaveButton.TabIndex = 4
+        Me.SaveButton.Text = "Lưu"
+        Me.SaveButton.UseVisualStyleBackColor = True
+        '
+        'LoadButton
+        '
+        Me.LoadButton.Location = New System.Drawing.Point(93, 12)
+        Me.LoadButton.Name = "LoadButton"
+        Me.LoadButton.Size = New System.Drawing.Size(75, 23)
+        Me.LoadButton.TabIndex = 5
+        Me.LoadButton.Text = "Mở"
+        Me.LoadButton.UseVisualStyleBackColor = True
+        '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1184, 561)
+        Me.Controls.Add(Me.LoadButton)
+        Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.EditButton)
         Me.Controls.Add(Me.CreateButton)
@@ -139,4 +161,6 @@ Partial Class Customer
     Friend WithEvents DiaChi As ColumnHeader
     Friend WithEvents CMND As ColumnHeader
     Friend WithEvents SDT As ColumnHeader
+    Friend WithEvents SaveButton As Button
+    Friend WithEvents LoadButton As Button
 End Class
