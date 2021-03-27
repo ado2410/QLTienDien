@@ -4,13 +4,13 @@
         If item.Length = 0 Then
             Return
         End If
-        list.Name = item(0)
+        list.Text = item(0)
         For i As Integer = 1 To listView.Columns.Count
             If i < item.Length Then
                 list.SubItems.Add(item(i))
             End If
         Next
-        listView.Items.Add(list)
+        listView.Items.Insert(0, list)
     End Sub
 
     Public Shared Sub Save(fileName As String, listView As ListView)
@@ -51,7 +51,16 @@
         file.Close()
         Return list
     End Function
-    Private Sub Main_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
+    Private Sub CustomerButton_Click(sender As Object, e As EventArgs) Handles CustomerButton.Click
+        Dim form As New Customer
+        form.Owner = Me
+        form.Show()
+    End Sub
+
+    Private Sub BillButton_Click(sender As Object, e As EventArgs) Handles BillButton.Click
+        Dim form As New Bill
+        form.Owner = Me
+        form.Show()
     End Sub
 End Class

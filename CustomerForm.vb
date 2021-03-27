@@ -31,7 +31,7 @@
             Else
                 gender = "Nữ"
             End If
-            AddToListView({CustomerLVLink.Items.Count + 1, MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
+            AddToListView({MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
 
             If Mode = 1 Then
                 CustomerLVLink.Items.RemoveAt(CustomerLVLink.FocusedItem.Index)
@@ -41,21 +41,27 @@
     End Sub
 
     Private Sub CustomerForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Owner.Enabled = False
+
         If Mode = 1 Then
             For Each i As ListViewItem In CustomerLVLink.SelectedItems
-                MaKH.Text = i.SubItems(1).Text
-                TenKH.Text = i.SubItems(2).Text
-                If i.SubItems(3).Text = "Nam" Then
+                MaKH.Text = i.SubItems(0).Text
+                TenKH.Text = i.SubItems(1).Text
+                If i.SubItems(2).Text = "Nam" Then
                     Nam.Checked = True
                     Nu.Checked = False
                 Else
                     Nam.Checked = False
                     Nu.Checked = True
                 End If
-                DiaChi.Text = i.SubItems(4).Text
-                CMND.Text = i.SubItems(5).Text
-                SDT.Text = i.SubItems(6).Text
+                DiaChi.Text = i.SubItems(3).Text
+                CMND.Text = i.SubItems(4).Text
+                SDT.Text = i.SubItems(5).Text
             Next
         End If
+    End Sub
+
+    Private Sub Customer_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Owner.Enabled = True
     End Sub
 End Class

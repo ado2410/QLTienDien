@@ -6,6 +6,7 @@
 
     Private Sub Load()
         Dim list = Main.Load("../../database/customers.txt")
+        CustomerLV.Items.Clear()
         For Each item In list
             CustomerLV.Items.Add(item)
         Next
@@ -16,13 +17,20 @@
     End Sub
 
     Private Sub Customer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Owner.Enabled = False
         CustomerLV.View = View.Details
+        Load()
+    End Sub
+
+    Private Sub Customer_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        Owner.Enabled = True
     End Sub
 
     Private Sub CreateButton_Click(sender As Object, e As EventArgs) Handles CreateButton.Click
-        Dim CustomerFormShow As New CustomerForm
-        CustomerFormShow.CustomerLVLink = CustomerLV
-        CustomerFormShow.Show()
+        Dim form As New CustomerForm
+        form.Owner = Me
+        form.CustomerLVLink = CustomerLV
+        form.Show()
     End Sub
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
@@ -35,10 +43,11 @@
 
     Private Sub EditButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
         If CustomerLV.FocusedItem IsNot Nothing Then
-            Dim CustomerFormShow As New CustomerForm
-            CustomerFormShow.CustomerLVLink = CustomerLV
-            CustomerFormShow.Mode = 1
-            CustomerFormShow.Show()
+            Dim form As New CustomerForm
+            form.Owner = Me
+            form.CustomerLVLink = CustomerLV
+            form.Mode = 1
+            form.Show()
         End If
     End Sub
 

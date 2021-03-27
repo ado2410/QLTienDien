@@ -23,7 +23,6 @@ Partial Class Customer
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.CustomerLV = New System.Windows.Forms.ListView()
-        Me.STT = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.MaKH = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TenKH = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.GT = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -39,18 +38,14 @@ Partial Class Customer
         '
         'CustomerLV
         '
-        Me.CustomerLV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.STT, Me.MaKH, Me.TenKH, Me.GT, Me.DiaChi, Me.CMND, Me.SDT})
+        Me.CustomerLV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MaKH, Me.TenKH, Me.GT, Me.DiaChi, Me.CMND, Me.SDT})
         Me.CustomerLV.FullRowSelect = True
         Me.CustomerLV.HideSelection = False
         Me.CustomerLV.Location = New System.Drawing.Point(12, 112)
         Me.CustomerLV.Name = "CustomerLV"
-        Me.CustomerLV.Size = New System.Drawing.Size(1160, 448)
+        Me.CustomerLV.Size = New System.Drawing.Size(860, 437)
         Me.CustomerLV.TabIndex = 0
         Me.CustomerLV.UseCompatibleStateImageBehavior = False
-        '
-        'STT
-        '
-        Me.STT.Text = "STT"
         '
         'MaKH
         '
@@ -130,14 +125,14 @@ Partial Class Customer
         Me.LoadButton.Name = "LoadButton"
         Me.LoadButton.Size = New System.Drawing.Size(75, 23)
         Me.LoadButton.TabIndex = 5
-        Me.LoadButton.Text = "Mở"
+        Me.LoadButton.Text = "Tải lại"
         Me.LoadButton.UseVisualStyleBackColor = True
         '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1184, 561)
+        Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.LoadButton)
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.DeleteButton)
@@ -154,7 +149,6 @@ Partial Class Customer
     Friend WithEvents CreateButton As Button
     Friend WithEvents EditButton As Button
     Friend WithEvents DeleteButton As Button
-    Friend WithEvents STT As ColumnHeader
     Friend WithEvents MaKH As ColumnHeader
     Friend WithEvents TenKH As ColumnHeader
     Friend WithEvents GT As ColumnHeader

@@ -33,6 +33,8 @@ Partial Class BillForm
         Me.LoaiDienLabel = New System.Windows.Forms.Label()
         Me.MaKH = New System.Windows.Forms.ComboBox()
         Me.LoaiDien = New System.Windows.Forms.ComboBox()
+        Me.SoDienError = New System.Windows.Forms.Label()
+        Me.MaKHError = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'ConfirmedButton
@@ -142,6 +144,7 @@ Partial Class BillForm
         '
         'LoaiDien
         '
+        Me.LoaiDien.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.LoaiDien.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoaiDien.FormattingEnabled = True
         Me.LoaiDien.Location = New System.Drawing.Point(146, 116)
@@ -149,12 +152,36 @@ Partial Class BillForm
         Me.LoaiDien.Size = New System.Drawing.Size(122, 25)
         Me.LoaiDien.TabIndex = 18
         '
+        'SoDienError
+        '
+        Me.SoDienError.AutoSize = True
+        Me.SoDienError.ForeColor = System.Drawing.Color.Red
+        Me.SoDienError.Location = New System.Drawing.Point(386, 152)
+        Me.SoDienError.Name = "SoDienError"
+        Me.SoDienError.Size = New System.Drawing.Size(49, 13)
+        Me.SoDienError.TabIndex = 19
+        Me.SoDienError.Text = "Nhập sai"
+        Me.SoDienError.Visible = False
+        '
+        'MaKHError
+        '
+        Me.MaKHError.AutoSize = True
+        Me.MaKHError.ForeColor = System.Drawing.Color.Red
+        Me.MaKHError.Location = New System.Drawing.Point(386, 51)
+        Me.MaKHError.Name = "MaKHError"
+        Me.MaKHError.Size = New System.Drawing.Size(59, 13)
+        Me.MaKHError.TabIndex = 20
+        Me.MaKHError.Text = "Chưa chọn"
+        Me.MaKHError.Visible = False
+        '
         'BillForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(451, 239)
+        Me.Controls.Add(Me.MaKHError)
+        Me.Controls.Add(Me.SoDienError)
         Me.Controls.Add(Me.LoaiDien)
         Me.Controls.Add(Me.MaKH)
         Me.Controls.Add(Me.NgayThu)
@@ -183,4 +210,6 @@ Partial Class BillForm
     Friend WithEvents LoaiDienLabel As Label
     Friend WithEvents MaKH As ComboBox
     Friend WithEvents LoaiDien As ComboBox
+    Friend WithEvents SoDienError As Label
+    Friend WithEvents MaKHError As Label
 End Class
