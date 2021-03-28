@@ -85,53 +85,68 @@ Partial Class Customer
         'CreateButton
         '
         Me.CreateButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CreateButton.Location = New System.Drawing.Point(12, 72)
+        Me.CreateButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.CreateButton.ForeColor = System.Drawing.Color.Yellow
+        Me.CreateButton.Location = New System.Drawing.Point(12, 60)
         Me.CreateButton.Name = "CreateButton"
-        Me.CreateButton.Size = New System.Drawing.Size(75, 23)
+        Me.CreateButton.Size = New System.Drawing.Size(75, 35)
         Me.CreateButton.TabIndex = 1
         Me.CreateButton.Text = "Tạo mới"
         Me.CreateButton.UseVisualStyleBackColor = False
         '
         'EditButton
         '
-        Me.EditButton.Location = New System.Drawing.Point(93, 72)
+        Me.EditButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.EditButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.EditButton.ForeColor = System.Drawing.Color.Yellow
+        Me.EditButton.Location = New System.Drawing.Point(110, 60)
         Me.EditButton.Name = "EditButton"
-        Me.EditButton.Size = New System.Drawing.Size(75, 23)
+        Me.EditButton.Size = New System.Drawing.Size(87, 35)
         Me.EditButton.TabIndex = 2
         Me.EditButton.Text = "Sửa"
-        Me.EditButton.UseVisualStyleBackColor = True
+        Me.EditButton.UseVisualStyleBackColor = False
         '
         'DeleteButton
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(174, 72)
+        Me.DeleteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DeleteButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DeleteButton.ForeColor = System.Drawing.Color.Yellow
+        Me.DeleteButton.Location = New System.Drawing.Point(216, 60)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteButton.Size = New System.Drawing.Size(94, 35)
         Me.DeleteButton.TabIndex = 3
         Me.DeleteButton.Text = "Xóa"
-        Me.DeleteButton.UseVisualStyleBackColor = True
+        Me.DeleteButton.UseVisualStyleBackColor = False
         '
         'SaveButton
         '
-        Me.SaveButton.Location = New System.Drawing.Point(12, 12)
+        Me.SaveButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.SaveButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SaveButton.ForeColor = System.Drawing.Color.Yellow
+        Me.SaveButton.Location = New System.Drawing.Point(12, 21)
         Me.SaveButton.Name = "SaveButton"
-        Me.SaveButton.Size = New System.Drawing.Size(75, 23)
+        Me.SaveButton.Size = New System.Drawing.Size(75, 33)
         Me.SaveButton.TabIndex = 4
         Me.SaveButton.Text = "Lưu"
-        Me.SaveButton.UseVisualStyleBackColor = True
+        Me.SaveButton.UseVisualStyleBackColor = False
         '
         'LoadButton
         '
-        Me.LoadButton.Location = New System.Drawing.Point(93, 12)
+        Me.LoadButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LoadButton.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoadButton.ForeColor = System.Drawing.Color.Yellow
+        Me.LoadButton.Location = New System.Drawing.Point(110, 21)
         Me.LoadButton.Name = "LoadButton"
-        Me.LoadButton.Size = New System.Drawing.Size(75, 23)
+        Me.LoadButton.Size = New System.Drawing.Size(87, 33)
         Me.LoadButton.TabIndex = 5
         Me.LoadButton.Text = "Tải lại"
-        Me.LoadButton.UseVisualStyleBackColor = True
+        Me.LoadButton.UseVisualStyleBackColor = False
         '
         'Customer
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(884, 561)
         Me.Controls.Add(Me.LoadButton)
         Me.Controls.Add(Me.SaveButton)
