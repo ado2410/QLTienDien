@@ -135,6 +135,7 @@ Partial Class BillForm
         '
         'MaKH
         '
+        Me.MaKH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.MaKH.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.MaKH.FormattingEnabled = True
         Me.MaKH.Location = New System.Drawing.Point(146, 48)

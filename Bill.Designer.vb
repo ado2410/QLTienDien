@@ -30,10 +30,11 @@ Partial Class Bill
         Me.NgayThu = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.LoaiDien = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SoDien = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.LoadButton = New System.Windows.Forms.Button()
-        Me.SaveButton = New System.Windows.Forms.Button()
         Me.DonGia = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Gia = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.LoadButton = New System.Windows.Forms.Button()
+        Me.SaveButton = New System.Windows.Forms.Button()
+        Me.PrintButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'DeleteButton
@@ -90,6 +91,16 @@ Partial Class Bill
         Me.SoDien.Text = "Số Điện"
         Me.SoDien.Width = 100
         '
+        'DonGia
+        '
+        Me.DonGia.Text = "Đơn Giá"
+        Me.DonGia.Width = 100
+        '
+        'Gia
+        '
+        Me.Gia.Text = "Giá"
+        Me.Gia.Width = 100
+        '
         'LoadButton
         '
         Me.LoadButton.Location = New System.Drawing.Point(93, 12)
@@ -108,21 +119,21 @@ Partial Class Bill
         Me.SaveButton.Text = "Lưu"
         Me.SaveButton.UseVisualStyleBackColor = True
         '
-        'DonGia
+        'PrintButton
         '
-        Me.DonGia.Text = "Đơn Giá"
-        Me.DonGia.Width = 100
-        '
-        'Gia
-        '
-        Me.Gia.Text = "Giá"
-        Me.Gia.Width = 100
+        Me.PrintButton.Location = New System.Drawing.Point(174, 53)
+        Me.PrintButton.Name = "PrintButton"
+        Me.PrintButton.Size = New System.Drawing.Size(75, 23)
+        Me.PrintButton.TabIndex = 10
+        Me.PrintButton.Text = "In"
+        Me.PrintButton.UseVisualStyleBackColor = True
         '
         'Bill
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(884, 561)
+        Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.LoadButton)
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.DeleteButton)
@@ -146,4 +157,5 @@ Partial Class Bill
     Friend WithEvents SoDien As ColumnHeader
     Friend WithEvents DonGia As ColumnHeader
     Friend WithEvents Gia As ColumnHeader
+    Friend WithEvents PrintButton As Button
 End Class

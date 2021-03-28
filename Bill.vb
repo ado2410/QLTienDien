@@ -42,4 +42,11 @@
     Private Sub LoadButton_Click(sender As Object, e As EventArgs) Handles LoadButton.Click
         Load()
     End Sub
+
+    Private Sub PrintButton_Click(sender As Object, e As EventArgs) Handles PrintButton.Click
+        Dim form As New PrintForm
+        form.Owner = Me
+        form.BillId = BillLV.SelectedItems(0).Text
+        form.Show()
+    End Sub
 End Class
