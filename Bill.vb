@@ -1,6 +1,4 @@
 ﻿Public Class Bill
-    Private Sub Save()
-        Main.Save("../../database/bills.txt", BillLV)
 
     End Sub
 

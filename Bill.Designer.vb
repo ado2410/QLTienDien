@@ -22,10 +22,11 @@ Partial Class Bill
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.DeleteButton = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.CreateButton = New System.Windows.Forms.Button()
-        Me.BillLV = New System.Windows.Forms.ListView()
-        Me.MaHD = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CustomerLV = New System.Windows.Forms.ListView()
+        Me.STT = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.MaKH = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.NgayThu = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.LoaiDien = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -35,61 +36,72 @@ Partial Class Bill
         Me.LoadButton = New System.Windows.Forms.Button()
         Me.SaveButton = New System.Windows.Forms.Button()
         Me.PrintButton = New System.Windows.Forms.Button()
+        Me.TenKH = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.GT = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.DiaChi = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.CMND = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.SDT = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.SuspendLayout()
         '
-        'DeleteButton
+        'Button3
         '
-        Me.DeleteButton.Location = New System.Drawing.Point(93, 53)
-        Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(75, 23)
-        Me.DeleteButton.TabIndex = 7
-        Me.DeleteButton.Text = "Xóa"
-        Me.DeleteButton.UseVisualStyleBackColor = True
+        Me.Button3.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button3.ForeColor = System.Drawing.Color.Yellow
+        Me.Button3.Location = New System.Drawing.Point(174, 53)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(75, 23)
+        Me.Button3.TabIndex = 7
+        Me.Button3.Text = "Xóa"
+        Me.Button3.UseVisualStyleBackColor = False
+        '
+        'Button2
+        '
+        Me.Button2.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Button2.ForeColor = System.Drawing.Color.Yellow
+        Me.Button2.Location = New System.Drawing.Point(93, 53)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 6
+        Me.Button2.Text = "Sửa"
+        Me.Button2.UseVisualStyleBackColor = False
         '
         'CreateButton
         '
+        Me.CreateButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CreateButton.ForeColor = System.Drawing.Color.Yellow
         Me.CreateButton.Location = New System.Drawing.Point(12, 53)
         Me.CreateButton.Name = "CreateButton"
         Me.CreateButton.Size = New System.Drawing.Size(75, 23)
         Me.CreateButton.TabIndex = 5
         Me.CreateButton.Text = "Tạo mới"
-        Me.CreateButton.UseVisualStyleBackColor = True
+        Me.CreateButton.UseVisualStyleBackColor = False
         '
-        'BillLV
+        'CustomerLV
         '
-        Me.BillLV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MaHD, Me.MaKH, Me.NgayThu, Me.LoaiDien, Me.SoDien, Me.DonGia, Me.Gia})
-        Me.BillLV.FullRowSelect = True
-        Me.BillLV.HideSelection = False
-        Me.BillLV.Location = New System.Drawing.Point(12, 82)
-        Me.BillLV.Name = "BillLV"
-        Me.BillLV.Size = New System.Drawing.Size(862, 448)
-        Me.BillLV.TabIndex = 4
-        Me.BillLV.UseCompatibleStateImageBehavior = False
+        Me.CustomerLV.BackColor = System.Drawing.Color.White
+        Me.CustomerLV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.STT, Me.MaKH, Me.TenKH, Me.GT, Me.DiaChi, Me.CMND, Me.SDT})
+        Me.CustomerLV.HideSelection = False
+        Me.CustomerLV.Location = New System.Drawing.Point(12, 82)
+        Me.CustomerLV.Name = "CustomerLV"
+        Me.CustomerLV.Size = New System.Drawing.Size(1160, 448)
+        Me.CustomerLV.TabIndex = 4
+        Me.CustomerLV.UseCompatibleStateImageBehavior = False
         '
-        'MaHD
+        'STT
         '
-        Me.MaHD.Text = "Mã hóa Đơn"
-        Me.MaHD.Width = 100
+        Me.STT.Text = "STT"
         '
         'MaKH
         '
         Me.MaKH.Text = "Mã Khách Hàng"
+        Me.MaKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         Me.MaKH.Width = 100
         '
-        'NgayThu
+        'TenKH
         '
-        Me.NgayThu.Text = "Ngày thu"
-        Me.NgayThu.Width = 150
-        '
-        'LoaiDien
-        '
-        Me.LoaiDien.Text = "Loại Điện"
-        Me.LoaiDien.Width = 150
-        '
-        'SoDien
-        '
-        Me.SoDien.Text = "Số Điện"
-        Me.SoDien.Width = 100
+        Me.TenKH.Text = "Tên Khách Hàng"
+        Me.TenKH.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.TenKH.Width = 200
         '
         'DonGia
         '
@@ -102,22 +114,16 @@ Partial Class Bill
         Me.Gia.Width = 100
         '
         'LoadButton
+        'GT
         '
-        Me.LoadButton.Location = New System.Drawing.Point(93, 12)
-        Me.LoadButton.Name = "LoadButton"
-        Me.LoadButton.Size = New System.Drawing.Size(75, 23)
-        Me.LoadButton.TabIndex = 9
-        Me.LoadButton.Text = "Tải lại"
-        Me.LoadButton.UseVisualStyleBackColor = True
+        Me.GT.Text = "Giới tính"
+        Me.GT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         '
-        'SaveButton
+        'DiaChi
         '
-        Me.SaveButton.Location = New System.Drawing.Point(12, 12)
-        Me.SaveButton.Name = "SaveButton"
-        Me.SaveButton.Size = New System.Drawing.Size(75, 23)
-        Me.SaveButton.TabIndex = 8
-        Me.SaveButton.Text = "Lưu"
-        Me.SaveButton.UseVisualStyleBackColor = True
+        Me.DiaChi.Text = "Địa Chỉ"
+        Me.DiaChi.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.DiaChi.Width = 200
         '
         'PrintButton
         '
@@ -127,6 +133,17 @@ Partial Class Bill
         Me.PrintButton.TabIndex = 10
         Me.PrintButton.Text = "In"
         Me.PrintButton.UseVisualStyleBackColor = True
+        'CMND
+        '
+        Me.CMND.Text = "CMND"
+        Me.CMND.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.CMND.Width = 150
+        '
+        'SDT
+        '
+        Me.SDT.Text = "SDT"
+        Me.SDT.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.SDT.Width = 100
         '
         'Bill
         '
@@ -137,20 +154,22 @@ Partial Class Bill
         Me.Controls.Add(Me.LoadButton)
         Me.Controls.Add(Me.SaveButton)
         Me.Controls.Add(Me.DeleteButton)
+        Me.ClientSize = New System.Drawing.Size(1184, 561)
+        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.CreateButton)
-        Me.Controls.Add(Me.BillLV)
+        Me.Controls.Add(Me.CustomerLV)
         Me.Name = "Bill"
         Me.Text = "Bill"
         Me.ResumeLayout(False)
 
     End Sub
 
-    Friend WithEvents DeleteButton As Button
+    Friend WithEvents Button3 As Button
+    Friend WithEvents Button2 As Button
     Friend WithEvents CreateButton As Button
-    Friend WithEvents BillLV As ListView
-    Friend WithEvents LoadButton As Button
-    Friend WithEvents SaveButton As Button
-    Friend WithEvents MaHD As ColumnHeader
+    Friend WithEvents CustomerLV As ListView
+    Friend WithEvents STT As ColumnHeader
     Friend WithEvents MaKH As ColumnHeader
     Friend WithEvents NgayThu As ColumnHeader
     Friend WithEvents LoaiDien As ColumnHeader
@@ -158,4 +177,9 @@ Partial Class Bill
     Friend WithEvents DonGia As ColumnHeader
     Friend WithEvents Gia As ColumnHeader
     Friend WithEvents PrintButton As Button
+    Friend WithEvents TenKH As ColumnHeader
+    Friend WithEvents GT As ColumnHeader
+    Friend WithEvents DiaChi As ColumnHeader
+    Friend WithEvents CMND As ColumnHeader
+    Friend WithEvents SDT As ColumnHeader
 End Class
