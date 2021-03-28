@@ -37,6 +37,8 @@ Partial Class PrintForm
         Me.LoaiDien = New System.Windows.Forms.Label()
         Me.DonGia = New System.Windows.Forms.Label()
         Me.ThanhTien = New System.Windows.Forms.Label()
+        Me.NgayTao = New System.Windows.Forms.Label()
+        Me.Label10 = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -175,11 +177,31 @@ Partial Class PrintForm
         Me.ThanhTien.TabIndex = 14
         Me.ThanhTien.Text = "ThanhTien"
         '
+        'NgayTao
+        '
+        Me.NgayTao.AutoSize = True
+        Me.NgayTao.Location = New System.Drawing.Point(353, 56)
+        Me.NgayTao.Name = "NgayTao"
+        Me.NgayTao.Size = New System.Drawing.Size(39, 13)
+        Me.NgayTao.TabIndex = 16
+        Me.NgayTao.Text = "Label9"
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Location = New System.Drawing.Point(297, 56)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(50, 13)
+        Me.Label10.TabIndex = 15
+        Me.Label10.Text = "Ngày tạo"
+        '
         'PrintForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(498, 331)
+        Me.Controls.Add(Me.NgayTao)
+        Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.ThanhTien)
         Me.Controls.Add(Me.DonGia)
         Me.Controls.Add(Me.LoaiDien)
@@ -217,4 +239,6 @@ Partial Class PrintForm
     Friend WithEvents LoaiDien As Label
     Friend WithEvents DonGia As Label
     Friend WithEvents ThanhTien As Label
+    Friend WithEvents NgayTao As Label
+    Friend WithEvents Label10 As Label
 End Class

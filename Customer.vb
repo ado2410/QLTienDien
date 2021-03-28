@@ -1,19 +1,30 @@
 ﻿Public Class Customer
     Private Sub Save()
-        Main.Save("../../database/customers.txt", CustomerLV)
-
+        App.Save("../../database/customers.txt", CustomerLV)
     End Sub
 
     Private Sub Load()
-        Dim list = Main.Load("../../database/customers.txt")
+        Dim list = App.Load("../../database/customers.txt")
         CustomerLV.Items.Clear()
         For Each item In list
             CustomerLV.Items.Add(item)
         Next
     End Sub
 
-    Private Sub AddToCustomerLV(item As Array)
-        Main.AddToListView(item, CustomerLV)
+    Public Sub Add(item As Array)
+        App.AddToListView(0, item, CustomerLV)
+        Save()
+    End Sub
+
+    Public Sub Edit(index As Integer, item As Array)
+        CustomerLV.Items.RemoveAt(index)
+        App.AddToListView(index, item, CustomerLV)
+        Save()
+    End Sub
+
+    Public Sub Remove(index As Integer)
+        CustomerLV.Items.RemoveAt(index)
+        Save()
     End Sub
 
     Private Sub Customer_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -29,33 +40,31 @@
     Private Sub CreateButton_Click(sender As Object, e As EventArgs) Handles CreateButton.Click
         Dim form As New CustomerForm
         form.Owner = Me
-        form.CustomerLVLink = CustomerLV
+        form.CustomerLink = Me
         form.Show()
     End Sub
 
     Private Sub DeleteButton_Click(sender As Object, e As EventArgs) Handles DeleteButton.Click
-        'Lấy vị trí con trỏ trong CustomerListView
-        If CustomerLV.FocusedItem.Index <> -1 Then
-            Dim i As Integer = CustomerLV.FocusedItem.Index
-            CustomerLV.Items.RemoveAt(i)
+        If CustomerLV.SelectedItems.Count > 0 Then
+            If App.Exist(CustomerLV.FocusedItem.SubItems(0).Text, "../../database/bills.txt", 1) = True Then '
+                MsgBox("Khách hàng này không thể xóa!Liên kết với hóa hơn.")
+            Else
+                Remove(CustomerLV.FocusedItem.Index)
+            End If
+        Else
+            MsgBox("Chưa chọn dữ liệu")
         End If
     End Sub
 
     Private Sub EditButton_Click(sender As Object, e As EventArgs) Handles EditButton.Click
-        If CustomerLV.FocusedItem IsNot Nothing Then
+        If CustomerLV.SelectedItems.Count > 0 Then
             Dim form As New CustomerForm
             form.Owner = Me
-            form.CustomerLVLink = CustomerLV
+            form.CustomerLink = Me
             form.Mode = 1
             form.Show()
+        Else
+            MsgBox("Chưa chọn dữ liệu")
         End If
-    End Sub
-
-    Private Sub SaveButton_Click(sender As Object, e As EventArgs) Handles SaveButton.Click
-        Save()
-    End Sub
-
-    Private Sub LoadButton_Click(sender As Object, e As EventArgs) Handles LoadButton.Click
-        Load()
     End Sub
 End Class

@@ -29,6 +29,7 @@ Partial Class Main
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.About = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -112,12 +113,22 @@ Partial Class Main
         Me.Label5.TabIndex = 6
         Me.Label5.Text = "Chức năng"
         '
+        'About
+        '
+        Me.About.Location = New System.Drawing.Point(23, 166)
+        Me.About.Name = "About"
+        Me.About.Size = New System.Drawing.Size(75, 23)
+        Me.About.TabIndex = 7
+        Me.About.Text = "Giới thiệu"
+        Me.About.UseVisualStyleBackColor = True
+        '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ActiveCaption
         Me.ClientSize = New System.Drawing.Size(322, 219)
+        Me.Controls.Add(Me.About)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
@@ -139,4 +150,5 @@ Partial Class Main
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents About As Button
 End Class

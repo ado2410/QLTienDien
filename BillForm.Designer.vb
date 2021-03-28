@@ -101,9 +101,9 @@ Partial Class BillForm
         Me.SoDienLable.ForeColor = System.Drawing.Color.Yellow
         Me.SoDienLable.Location = New System.Drawing.Point(30, 156)
         Me.SoDienLable.Name = "SoDienLable"
-        Me.SoDienLable.Size = New System.Drawing.Size(54, 17)
+        Me.SoDienLable.Size = New System.Drawing.Size(107, 17)
         Me.SoDienLable.TabIndex = 4
-        Me.SoDienLable.Text = "Số điện"
+        Me.SoDienLable.Text = "Số điện sử dụng"
         '
         'SoDien
         '

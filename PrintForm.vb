@@ -3,8 +3,8 @@
     Private Sub PrintForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Owner.Enabled = False
 
-        Dim customerData = Main.Load("../../database/customers.txt")
-        Dim billData = Main.Load("../../database/bills.txt")
+        Dim customerData = App.Load("../../database/customers.txt")
+        Dim billData = App.Load("../../database/bills.txt")
 
         Dim bill As New ListViewItem
 
@@ -29,8 +29,9 @@
         DiaChi.Text = customer.SubItems(5).Text
         SDT.Text = customer.SubItems(4).Text
         LoaiDien.Text = bill.SubItems(3).Text
-        DonGia.Text = "Chưa xong"
-        ThanhTien.Text = "Chưa xong"
+        DonGia.Text = bill.SubItems(5).Text
+        ThanhTien.Text = bill.SubItems(6).Text
+        NgayTao.Text = bill.SubItems(2).Text
     End Sub
 
     Private Sub PrintForm_Closed(sender As Object, e As EventArgs) Handles Me.Closed

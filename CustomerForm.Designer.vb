@@ -36,7 +36,6 @@ Partial Class CustomerForm
         Me.CMND = New System.Windows.Forms.TextBox()
         Me.Nam = New System.Windows.Forms.RadioButton()
         Me.Nu = New System.Windows.Forms.RadioButton()
-        Me.MaKHError = New System.Windows.Forms.Label()
         Me.TenKHError = New System.Windows.Forms.Label()
         Me.SDTError = New System.Windows.Forms.Label()
         Me.DiaChiError = New System.Windows.Forms.Label()
@@ -59,7 +58,7 @@ Partial Class CustomerForm
         'MaKH
         '
         Me.MaKH.Location = New System.Drawing.Point(180, 16)
-        Me.MaKH.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.MaKH.Margin = New System.Windows.Forms.Padding(4)
         Me.MaKH.MaxLength = 10
         Me.MaKH.Name = "MaKH"
         Me.MaKH.Size = New System.Drawing.Size(295, 23)
@@ -70,7 +69,7 @@ Partial Class CustomerForm
         Me.ConfirmedButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.ConfirmedButton.ForeColor = System.Drawing.Color.White
         Me.ConfirmedButton.Location = New System.Drawing.Point(205, 229)
-        Me.ConfirmedButton.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ConfirmedButton.Margin = New System.Windows.Forms.Padding(4)
         Me.ConfirmedButton.Name = "ConfirmedButton"
         Me.ConfirmedButton.Size = New System.Drawing.Size(204, 30)
         Me.ConfirmedButton.TabIndex = 2
@@ -145,7 +144,7 @@ Partial Class CustomerForm
         'TenKH
         '
         Me.TenKH.Location = New System.Drawing.Point(180, 50)
-        Me.TenKH.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TenKH.Margin = New System.Windows.Forms.Padding(4)
         Me.TenKH.MaxLength = 100
         Me.TenKH.Name = "TenKH"
         Me.TenKH.Size = New System.Drawing.Size(295, 23)
@@ -154,7 +153,7 @@ Partial Class CustomerForm
         'SDT
         '
         Me.SDT.Location = New System.Drawing.Point(180, 109)
-        Me.SDT.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.SDT.Margin = New System.Windows.Forms.Padding(4)
         Me.SDT.MaxLength = 10
         Me.SDT.Name = "SDT"
         Me.SDT.Size = New System.Drawing.Size(295, 23)
@@ -163,7 +162,7 @@ Partial Class CustomerForm
         'DiaChi
         '
         Me.DiaChi.Location = New System.Drawing.Point(180, 146)
-        Me.DiaChi.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.DiaChi.Margin = New System.Windows.Forms.Padding(4)
         Me.DiaChi.MaxLength = 200
         Me.DiaChi.Name = "DiaChi"
         Me.DiaChi.Size = New System.Drawing.Size(295, 23)
@@ -172,7 +171,7 @@ Partial Class CustomerForm
         'CMND
         '
         Me.CMND.Location = New System.Drawing.Point(180, 180)
-        Me.CMND.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CMND.Margin = New System.Windows.Forms.Padding(4)
         Me.CMND.MaxLength = 12
         Me.CMND.Name = "CMND"
         Me.CMND.Size = New System.Drawing.Size(295, 23)
@@ -183,7 +182,7 @@ Partial Class CustomerForm
         Me.Nam.AutoSize = True
         Me.Nam.Checked = True
         Me.Nam.Location = New System.Drawing.Point(180, 78)
-        Me.Nam.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Nam.Margin = New System.Windows.Forms.Padding(4)
         Me.Nam.Name = "Nam"
         Me.Nam.Size = New System.Drawing.Size(58, 21)
         Me.Nam.TabIndex = 3
@@ -195,24 +194,12 @@ Partial Class CustomerForm
         '
         Me.Nu.AutoSize = True
         Me.Nu.Location = New System.Drawing.Point(251, 78)
-        Me.Nu.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Nu.Margin = New System.Windows.Forms.Padding(4)
         Me.Nu.Name = "Nu"
         Me.Nu.Size = New System.Drawing.Size(43, 21)
         Me.Nu.TabIndex = 3
         Me.Nu.Text = "Nữ"
         Me.Nu.UseVisualStyleBackColor = True
-        '
-        'MaKHError
-        '
-        Me.MaKHError.AutoSize = True
-        Me.MaKHError.ForeColor = System.Drawing.Color.Red
-        Me.MaKHError.Location = New System.Drawing.Point(484, 20)
-        Me.MaKHError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.MaKHError.Name = "MaKHError"
-        Me.MaKHError.Size = New System.Drawing.Size(64, 17)
-        Me.MaKHError.TabIndex = 4
-        Me.MaKHError.Text = "Nhập sai"
-        Me.MaKHError.Visible = False
         '
         'TenKHError
         '
@@ -271,7 +258,6 @@ Partial Class CustomerForm
         Me.Controls.Add(Me.DiaChiError)
         Me.Controls.Add(Me.SDTError)
         Me.Controls.Add(Me.TenKHError)
-        Me.Controls.Add(Me.MaKHError)
         Me.Controls.Add(Me.Nu)
         Me.Controls.Add(Me.Nam)
         Me.Controls.Add(Me.ConfirmedButton)
@@ -287,7 +273,7 @@ Partial Class CustomerForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Margin = New System.Windows.Forms.Padding(4)
         Me.Name = "CustomerForm"
         Me.Text = "CustomerForm"
         Me.ResumeLayout(False)
@@ -309,7 +295,6 @@ Partial Class CustomerForm
     Friend WithEvents CMND As TextBox
     Friend WithEvents Nam As RadioButton
     Friend WithEvents Nu As RadioButton
-    Friend WithEvents MaKHError As Label
     Friend WithEvents TenKHError As Label
     Friend WithEvents SDTError As Label
     Friend WithEvents DiaChiError As Label

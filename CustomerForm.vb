@@ -1,10 +1,6 @@
 ﻿Public Class CustomerForm
-    Public CustomerLVLink As ListView
+    Public CustomerLink As Customer
     Public Mode As Integer = 0
-
-    Private Sub AddToListView(item As Array)
-        Main.AddToListView(item, CustomerLVLink)
-    End Sub
 
     Private Sub ConfirmedButton_Click(sender As Object, e As EventArgs) Handles ConfirmedButton.Click
         Dim isValid = True
@@ -31,10 +27,11 @@
             Else
                 gender = "Nữ"
             End If
-            AddToListView({MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
 
-            If Mode = 1 Then
-                CustomerLVLink.Items.RemoveAt(CustomerLVLink.FocusedItem.Index)
+            If Mode = 0 Then
+                CustomerLink.Add({MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
+            Else
+                CustomerLink.Edit(CustomerLink.CustomerLV.FocusedItem.Index, {MaKH.Text, TenKH.Text, gender, DiaChi.Text, CMND.Text, SDT.Text})
             End If
             Close()
         End If
@@ -42,9 +39,15 @@
 
     Private Sub CustomerForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Owner.Enabled = False
-
-        If Mode = 1 Then
-            For Each i As ListViewItem In CustomerLVLink.SelectedItems
+        MaKH.Enabled = False
+        If Mode = 0 Then
+            Dim number As Integer
+            Do
+                number = Fix(999999999 * Rnd())
+            Loop While App.Exist(number, "../../database/customers.txt", 0)
+            MaKH.Text = number
+        ElseIf Mode = 1 Then
+            For Each i As ListViewItem In CustomerLink.CustomerLV.SelectedItems
                 MaKH.Text = i.SubItems(0).Text
                 TenKH.Text = i.SubItems(1).Text
                 If i.SubItems(2).Text = "Nam" Then
