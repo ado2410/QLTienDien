@@ -43,10 +43,11 @@ Partial Class Bill
         'DeleteButton
         '
         Me.DeleteButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DeleteButton.Font = New System.Drawing.Font("Century", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DeleteButton.ForeColor = System.Drawing.Color.Yellow
-        Me.DeleteButton.Location = New System.Drawing.Point(93, 14)
+        Me.DeleteButton.Location = New System.Drawing.Point(93, 2)
         Me.DeleteButton.Name = "DeleteButton"
-        Me.DeleteButton.Size = New System.Drawing.Size(75, 23)
+        Me.DeleteButton.Size = New System.Drawing.Size(75, 35)
         Me.DeleteButton.TabIndex = 7
         Me.DeleteButton.Text = "Xóa"
         Me.DeleteButton.UseVisualStyleBackColor = False
@@ -54,10 +55,11 @@ Partial Class Bill
         'CreateButton
         '
         Me.CreateButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CreateButton.Font = New System.Drawing.Font("Century", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CreateButton.ForeColor = System.Drawing.Color.Yellow
-        Me.CreateButton.Location = New System.Drawing.Point(12, 14)
+        Me.CreateButton.Location = New System.Drawing.Point(12, 2)
         Me.CreateButton.Name = "CreateButton"
-        Me.CreateButton.Size = New System.Drawing.Size(75, 23)
+        Me.CreateButton.Size = New System.Drawing.Size(75, 35)
         Me.CreateButton.TabIndex = 5
         Me.CreateButton.Text = "Tạo mới"
         Me.CreateButton.UseVisualStyleBackColor = False
@@ -70,7 +72,7 @@ Partial Class Bill
         Me.BillLV.HideSelection = False
         Me.BillLV.Location = New System.Drawing.Point(12, 43)
         Me.BillLV.Name = "BillLV"
-        Me.BillLV.Size = New System.Drawing.Size(1160, 448)
+        Me.BillLV.Size = New System.Drawing.Size(902, 448)
         Me.BillLV.TabIndex = 4
         Me.BillLV.UseCompatibleStateImageBehavior = False
         '
@@ -125,10 +127,11 @@ Partial Class Bill
         'PrintButton
         '
         Me.PrintButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PrintButton.Font = New System.Drawing.Font("Century", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PrintButton.ForeColor = System.Drawing.Color.Yellow
-        Me.PrintButton.Location = New System.Drawing.Point(174, 14)
+        Me.PrintButton.Location = New System.Drawing.Point(174, 2)
         Me.PrintButton.Name = "PrintButton"
-        Me.PrintButton.Size = New System.Drawing.Size(75, 23)
+        Me.PrintButton.Size = New System.Drawing.Size(75, 35)
         Me.PrintButton.TabIndex = 10
         Me.PrintButton.Text = "In"
         Me.PrintButton.UseVisualStyleBackColor = False
@@ -137,7 +140,7 @@ Partial Class Bill
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1184, 512)
+        Me.ClientSize = New System.Drawing.Size(926, 512)
         Me.Controls.Add(Me.PrintButton)
         Me.Controls.Add(Me.DeleteButton)
         Me.Controls.Add(Me.CreateButton)

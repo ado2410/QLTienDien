@@ -115,12 +115,14 @@ Partial Class Main
         '
         'About
         '
+        Me.About.BackColor = System.Drawing.Color.Blue
+        Me.About.ForeColor = System.Drawing.Color.White
         Me.About.Location = New System.Drawing.Point(23, 166)
         Me.About.Name = "About"
         Me.About.Size = New System.Drawing.Size(75, 23)
         Me.About.TabIndex = 7
         Me.About.Text = "Giới thiệu"
-        Me.About.UseVisualStyleBackColor = True
+        Me.About.UseVisualStyleBackColor = False
         '
         'Main
         '

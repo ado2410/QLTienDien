@@ -44,7 +44,7 @@ Partial Class PrintForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Blue
+        Me.Label1.BackColor = System.Drawing.Color.DodgerBlue
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(139, 9)
@@ -97,7 +97,7 @@ Partial Class PrintForm
         '
         Me.Label6.AutoSize = True
         Me.Label6.ForeColor = System.Drawing.Color.White
-        Me.Label6.Location = New System.Drawing.Point(36, 205)
+        Me.Label6.Location = New System.Drawing.Point(36, 170)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 13)
         Me.Label6.TabIndex = 5
@@ -107,7 +107,7 @@ Partial Class PrintForm
         '
         Me.Label7.AutoSize = True
         Me.Label7.ForeColor = System.Drawing.Color.White
-        Me.Label7.Location = New System.Drawing.Point(166, 205)
+        Me.Label7.Location = New System.Drawing.Point(41, 219)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 13)
         Me.Label7.TabIndex = 6
@@ -117,7 +117,7 @@ Partial Class PrintForm
         '
         Me.Label8.AutoSize = True
         Me.Label8.ForeColor = System.Drawing.Color.White
-        Me.Label8.Location = New System.Drawing.Point(362, 205)
+        Me.Label8.Location = New System.Drawing.Point(37, 267)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(58, 13)
         Me.Label8.TabIndex = 7
@@ -147,7 +147,7 @@ Partial Class PrintForm
         '
         Me.DiaChi.AutoSize = True
         Me.DiaChi.ForeColor = System.Drawing.Color.White
-        Me.DiaChi.Location = New System.Drawing.Point(128, 115)
+        Me.DiaChi.Location = New System.Drawing.Point(227, 115)
         Me.DiaChi.Name = "DiaChi"
         Me.DiaChi.Size = New System.Drawing.Size(38, 13)
         Me.DiaChi.TabIndex = 10
@@ -157,7 +157,7 @@ Partial Class PrintForm
         '
         Me.SDT.AutoSize = True
         Me.SDT.ForeColor = System.Drawing.Color.White
-        Me.SDT.Location = New System.Drawing.Point(130, 146)
+        Me.SDT.Location = New System.Drawing.Point(229, 146)
         Me.SDT.Name = "SDT"
         Me.SDT.Size = New System.Drawing.Size(29, 13)
         Me.SDT.TabIndex = 11
@@ -167,7 +167,7 @@ Partial Class PrintForm
         '
         Me.LoaiDien.AutoSize = True
         Me.LoaiDien.ForeColor = System.Drawing.Color.White
-        Me.LoaiDien.Location = New System.Drawing.Point(37, 230)
+        Me.LoaiDien.Location = New System.Drawing.Point(37, 195)
         Me.LoaiDien.Name = "LoaiDien"
         Me.LoaiDien.Size = New System.Drawing.Size(49, 13)
         Me.LoaiDien.TabIndex = 12
@@ -177,7 +177,7 @@ Partial Class PrintForm
         '
         Me.DonGia.AutoSize = True
         Me.DonGia.ForeColor = System.Drawing.Color.White
-        Me.DonGia.Location = New System.Drawing.Point(166, 230)
+        Me.DonGia.Location = New System.Drawing.Point(41, 244)
         Me.DonGia.Name = "DonGia"
         Me.DonGia.Size = New System.Drawing.Size(44, 13)
         Me.DonGia.TabIndex = 13
@@ -187,7 +187,7 @@ Partial Class PrintForm
         '
         Me.ThanhTien.AutoSize = True
         Me.ThanhTien.ForeColor = System.Drawing.Color.White
-        Me.ThanhTien.Location = New System.Drawing.Point(362, 230)
+        Me.ThanhTien.Location = New System.Drawing.Point(37, 292)
         Me.ThanhTien.Name = "ThanhTien"
         Me.ThanhTien.Size = New System.Drawing.Size(59, 13)
         Me.ThanhTien.TabIndex = 14
@@ -217,7 +217,7 @@ Partial Class PrintForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.Blue
+        Me.BackColor = System.Drawing.Color.DodgerBlue
         Me.ClientSize = New System.Drawing.Size(498, 331)
         Me.Controls.Add(Me.NgayTao)
         Me.Controls.Add(Me.Label10)
