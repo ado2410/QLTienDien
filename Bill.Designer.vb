@@ -64,7 +64,7 @@ Partial Class Bill
         '
         'BillLV
         '
-        Me.BillLV.BackColor = System.Drawing.Color.White
+        Me.BillLV.BackColor = System.Drawing.Color.Gainsboro
         Me.BillLV.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MaHD, Me.MaKH, Me.NgayTao, Me.LoaiDiens, Me.SoDiens, Me.DonGias, Me.ThanhTien})
         Me.BillLV.FullRowSelect = True
         Me.BillLV.HideSelection = False
@@ -124,12 +124,14 @@ Partial Class Bill
         '
         'PrintButton
         '
+        Me.PrintButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.PrintButton.ForeColor = System.Drawing.Color.Yellow
         Me.PrintButton.Location = New System.Drawing.Point(174, 14)
         Me.PrintButton.Name = "PrintButton"
         Me.PrintButton.Size = New System.Drawing.Size(75, 23)
         Me.PrintButton.TabIndex = 10
         Me.PrintButton.Text = "In"
-        Me.PrintButton.UseVisualStyleBackColor = True
+        Me.PrintButton.UseVisualStyleBackColor = False
         '
         'Bill
         '

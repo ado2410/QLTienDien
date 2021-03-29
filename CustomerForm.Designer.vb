@@ -73,7 +73,7 @@ Partial Class CustomerForm
         Me.ConfirmedButton.Name = "ConfirmedButton"
         Me.ConfirmedButton.Size = New System.Drawing.Size(204, 30)
         Me.ConfirmedButton.TabIndex = 2
-        Me.ConfirmedButton.Text = "Thêm"
+        Me.ConfirmedButton.Text = "Xác "
         Me.ConfirmedButton.UseVisualStyleBackColor = False
         '
         'Label2
@@ -220,9 +220,9 @@ Partial Class CustomerForm
         Me.SDTError.Location = New System.Drawing.Point(484, 112)
         Me.SDTError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.SDTError.Name = "SDTError"
-        Me.SDTError.Size = New System.Drawing.Size(64, 17)
+        Me.SDTError.Size = New System.Drawing.Size(103, 17)
         Me.SDTError.TabIndex = 6
-        Me.SDTError.Text = "Nhập sai"
+        Me.SDTError.Text = "Nhập sai, 10 số"
         Me.SDTError.Visible = False
         '
         'DiaChiError
@@ -244,9 +244,9 @@ Partial Class CustomerForm
         Me.CMNDError.Location = New System.Drawing.Point(484, 184)
         Me.CMNDError.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.CMNDError.Name = "CMNDError"
-        Me.CMNDError.Size = New System.Drawing.Size(64, 17)
+        Me.CMNDError.Size = New System.Drawing.Size(168, 17)
         Me.CMNDError.TabIndex = 8
-        Me.CMNDError.Text = "Nhập sai"
+        Me.CMNDError.Text = "Nhập sai, 9 số hoặc 12 số"
         Me.CMNDError.Visible = False
         '
         'CustomerForm

@@ -32,14 +32,18 @@ Partial Class About
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(53, 13)
+        Me.Label1.Font = New System.Drawing.Font("Century Gothic", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
+        Me.Label1.Location = New System.Drawing.Point(79, 9)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(148, 13)
+        Me.Label1.Size = New System.Drawing.Size(276, 23)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Chương trình quản lý tiền điện"
         '
         'TextBox1
         '
+        Me.TextBox1.BackColor = System.Drawing.Color.Teal
+        Me.TextBox1.ForeColor = System.Drawing.Color.White
         Me.TextBox1.Location = New System.Drawing.Point(56, 39)
         Me.TextBox1.Multiline = True
         Me.TextBox1.Name = "TextBox1"
@@ -52,18 +56,22 @@ Partial Class About
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(12, 388)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(178, 13)
+        Me.Label2.Size = New System.Drawing.Size(223, 16)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "@2020 - Team5. All Right Reserved"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Century Gothic", 9.75!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(15, 405)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(60, 13)
+        Me.Label3.Size = New System.Drawing.Size(76, 16)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Version 1.0"
         '
@@ -71,11 +79,13 @@ Partial Class About
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Magenta
         Me.ClientSize = New System.Drawing.Size(420, 424)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label1)
+        Me.ForeColor = System.Drawing.Color.Yellow
         Me.Name = "About"
         Me.Text = "About"
         Me.ResumeLayout(False)

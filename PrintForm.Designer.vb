@@ -44,7 +44,9 @@ Partial Class PrintForm
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.BackColor = System.Drawing.Color.Blue
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.ForeColor = System.Drawing.Color.White
         Me.Label1.Location = New System.Drawing.Point(139, 9)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(225, 31)
@@ -54,6 +56,7 @@ Partial Class PrintForm
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.White
         Me.Label2.Location = New System.Drawing.Point(36, 85)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(86, 13)
@@ -63,6 +66,7 @@ Partial Class PrintForm
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.White
         Me.Label3.Location = New System.Drawing.Point(36, 115)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(40, 13)
@@ -72,6 +76,7 @@ Partial Class PrintForm
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.White
         Me.Label4.Location = New System.Drawing.Point(36, 146)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(70, 13)
@@ -81,6 +86,7 @@ Partial Class PrintForm
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.White
         Me.Label5.Location = New System.Drawing.Point(142, 56)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(82, 13)
@@ -90,6 +96,7 @@ Partial Class PrintForm
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.White
         Me.Label6.Location = New System.Drawing.Point(36, 205)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(51, 13)
@@ -99,6 +106,7 @@ Partial Class PrintForm
         'Label7
         '
         Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.White
         Me.Label7.Location = New System.Drawing.Point(166, 205)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(44, 13)
@@ -108,6 +116,7 @@ Partial Class PrintForm
         'Label8
         '
         Me.Label8.AutoSize = True
+        Me.Label8.ForeColor = System.Drawing.Color.White
         Me.Label8.Location = New System.Drawing.Point(362, 205)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(58, 13)
@@ -117,6 +126,7 @@ Partial Class PrintForm
         'MaKH
         '
         Me.MaKH.AutoSize = True
+        Me.MaKH.ForeColor = System.Drawing.Color.White
         Me.MaKH.Location = New System.Drawing.Point(230, 56)
         Me.MaKH.Name = "MaKH"
         Me.MaKH.Size = New System.Drawing.Size(37, 13)
@@ -126,6 +136,7 @@ Partial Class PrintForm
         'TenKH
         '
         Me.TenKH.AutoSize = True
+        Me.TenKH.ForeColor = System.Drawing.Color.White
         Me.TenKH.Location = New System.Drawing.Point(128, 85)
         Me.TenKH.Name = "TenKH"
         Me.TenKH.Size = New System.Drawing.Size(41, 13)
@@ -135,6 +146,7 @@ Partial Class PrintForm
         'DiaChi
         '
         Me.DiaChi.AutoSize = True
+        Me.DiaChi.ForeColor = System.Drawing.Color.White
         Me.DiaChi.Location = New System.Drawing.Point(128, 115)
         Me.DiaChi.Name = "DiaChi"
         Me.DiaChi.Size = New System.Drawing.Size(38, 13)
@@ -144,6 +156,7 @@ Partial Class PrintForm
         'SDT
         '
         Me.SDT.AutoSize = True
+        Me.SDT.ForeColor = System.Drawing.Color.White
         Me.SDT.Location = New System.Drawing.Point(130, 146)
         Me.SDT.Name = "SDT"
         Me.SDT.Size = New System.Drawing.Size(29, 13)
@@ -153,6 +166,7 @@ Partial Class PrintForm
         'LoaiDien
         '
         Me.LoaiDien.AutoSize = True
+        Me.LoaiDien.ForeColor = System.Drawing.Color.White
         Me.LoaiDien.Location = New System.Drawing.Point(37, 230)
         Me.LoaiDien.Name = "LoaiDien"
         Me.LoaiDien.Size = New System.Drawing.Size(49, 13)
@@ -162,6 +176,7 @@ Partial Class PrintForm
         'DonGia
         '
         Me.DonGia.AutoSize = True
+        Me.DonGia.ForeColor = System.Drawing.Color.White
         Me.DonGia.Location = New System.Drawing.Point(166, 230)
         Me.DonGia.Name = "DonGia"
         Me.DonGia.Size = New System.Drawing.Size(44, 13)
@@ -171,6 +186,7 @@ Partial Class PrintForm
         'ThanhTien
         '
         Me.ThanhTien.AutoSize = True
+        Me.ThanhTien.ForeColor = System.Drawing.Color.White
         Me.ThanhTien.Location = New System.Drawing.Point(362, 230)
         Me.ThanhTien.Name = "ThanhTien"
         Me.ThanhTien.Size = New System.Drawing.Size(59, 13)
@@ -180,6 +196,7 @@ Partial Class PrintForm
         'NgayTao
         '
         Me.NgayTao.AutoSize = True
+        Me.NgayTao.ForeColor = System.Drawing.Color.White
         Me.NgayTao.Location = New System.Drawing.Point(353, 56)
         Me.NgayTao.Name = "NgayTao"
         Me.NgayTao.Size = New System.Drawing.Size(39, 13)
@@ -189,6 +206,7 @@ Partial Class PrintForm
         'Label10
         '
         Me.Label10.AutoSize = True
+        Me.Label10.ForeColor = System.Drawing.Color.White
         Me.Label10.Location = New System.Drawing.Point(297, 56)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(50, 13)
@@ -199,6 +217,7 @@ Partial Class PrintForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Blue
         Me.ClientSize = New System.Drawing.Size(498, 331)
         Me.Controls.Add(Me.NgayTao)
         Me.Controls.Add(Me.Label10)
@@ -218,7 +237,7 @@ Partial Class PrintForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "PrintForm"
-        Me.Text = "PrintForm"
+        Me.Text = "In hóa đơn"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
